@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Restaurant Template/Review</title>
+</head>
+<body>
+    <header>
+        <img src="BURGER  logo.png" alt="Burger Logo" class="logo" a href="index.html">
+        <nav>
+            <ul id="navbar" class="nav-area">
+                <li><a href="index.html" id="navmenu">HOME</a></li>
+                <li><a href="menu_one.html" id="navmenu">MENU</a></li>
+                <li><a href="menu_two.html" id="navmenu">DRINKS</a></li>
+                <li><a href="review.html" id="navmenu">REVIEWS</a></li>
+                <li><a href="info.html" id="navmenu">INFO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form>
+        <h1>Let Us Know How We Did</h1>
+        <div>
+            <fieldset>
+                <legend>Please fill out the form below</legend>
+                <br>
+                <div>
+                    <label for="first">First</label>
+                    <input type="text" id="first" required>
+                    <label for="last">Last</label>
+                    <input type="text" id="last" required>
+                </div>
+                <br>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="(optional)">
+                </div>
+                <br>
+                <div>
+                    <label for="date">Date Visited</label>
+                    <input type="date" id="date" name="date" min="2022-01-01" max="2022-12-31" required>
+                </div>
+                <br>
+                <div>
+                    <label for="employee">Who was your server?</label>
+                    <select name="employee" id="employee" required>
+                        <option value="employeeName" hidden>Employee Name</option>
+                        <option value="nostalgiaCritic">Nostalgia Critic</option>
+                        <option value="linkara">Linkara</option>
+                        <option value="spoony">Spoony</option>
+                        <option value="angryJoe">Angry Joe</option>
+                        <option value="avgn">Angry Video Game Nerd</option>
+                    </select>
+                </div>
+                <br>
+                <div>
+                    <legend>On a scale between 1-5 how would you rate your experience</legend>
+                    <br>
+                        <input type="radio" name="rating" id="1">
+                        <label for="1">1</label>
+                        <input type="radio" name="rating" id="2">
+                        <label for="2">2</label>
+                        <input type="radio" name="rating" id="3">
+                        <label for="3">3</label>
+                        <input type="radio" name="rating" id="4">
+                        <label for="4">4</label>
+                        <input type="radio" name="rating" id="5" checked>
+                        <label for="5">5</label>
+                    <br>
+                </div>
+                <br>
+                <div>
+                    <label for="text">Tell us in your own words about your experience</label>
+                    <br>
+                    <textarea name="text" id="text" cols="50" rows="10" maxlength="200" placeholder="(Max Length 200)"></textarea>
+                </div>
+                <br>
+                <div>
+                    <input type="checkbox" id=permission name=permission>
+                    <label for="checkbox">Would you like for us to email you about your response?</label>
+                </div>
+                <br>
+                <div>
+                    <input type="submit">
+                    <input type="reset">
+                </div>
+                <br>
+                </fieldset>
+        </div>
+    </form>
+</body>
+</html>
